@@ -4,7 +4,7 @@ from django.shortcuts import render
 all_posts = [
     {
         "slug": "hike-in-the-mountains",
-        "image": "mountains.jpg",
+        "image": "down.jpeg",
         "author": "Ubaid",
         "date": date(2021, 7, 21),
         "title": "Mountain Hiking",
@@ -25,7 +25,7 @@ all_posts = [
     },
     {
         "slug": "programming-is-fun",
-        "image": "coding.jpg",
+        "image": "down.jpeg",
         "author": "Ubaid",
         "date": date(2022, 3, 10),
         "title": "Programming Is Great!",
@@ -46,7 +46,7 @@ all_posts = [
     },
     {
         "slug": "into-the-woods",
-        "image": "woods.jpg",
+        "image": "down.jpeg",
         "author": "Ubaid",
         "date": date(2020, 8, 5),
         "title": "Nature At Its Best",
