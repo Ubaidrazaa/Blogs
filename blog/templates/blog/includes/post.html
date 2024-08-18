@@ -3,12 +3,12 @@
 <li>
     <article>
         <a href="{% url "post-detail-page" "mountains_overview" %}">
-           <img src="{% static "blog/images/"|add:post.image %}" alt="{{ post.title }}">
+            <img src="{% static "blog/images/" %}{{ post.image }}" alt="{{ post.title }}"/>
            <div class="post">
               <h3>{{ post.title }}</h3>
               <p>
                 {{ post.excerpt }}
-            </p>
+              </p>
            </div> 
         </a>
     </article>
