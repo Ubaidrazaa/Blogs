@@ -1,6 +1,7 @@
 from datetime import date
 from django.shortcuts import render
-
+from django.http import HttpResponseNotFound
+from django.template.loader import render_to_string
 all_posts = [
     {
         "slug": "hike-in-the-mountains",
@@ -85,5 +86,6 @@ def posts(request):
 def post_detail(request, slug):
     identified_post = next((post for post in all_posts if post['slug'] == slug),None)
     return render(request,"blog/post-detail.html",{
-        "post":identified_post
+    "post":identified_post
     })
+    
